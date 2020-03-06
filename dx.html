@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        #root,
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        }
+
+        .wrapper {
+            min-height: 946px;
+            background-color: #f7f7f7;
+            border: .01rem solid transparent;
+        }
+
+        .top {
+            background: url("https://img1.dxycdn.com/2020/0208/913/3395498790898861163-2.png") no-repeat;
+            width: 100%;
+            position: relative;
+            padding-top: 33.5%;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .pv {
+            position: absolute;
+            right: 0;
+            top: .5rem;
+            height: 2rem;
+            width: auto;
+            padding: 0 0.66rem 0 1rem;
+            color: #fff;
+            font-size: 1rem;
+            line-height: 2rem;
+            background-color: rgba(19, 15, 133, .6);
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+
+        /* Tab */
+
+        .inner {
+            display: flex;
+            line-height: 4rem;
+            font-size: 1.2rem;
+            color: #333;
+            text-align: center;
+        }
+
+        .inner span {
+            flex: 1 1;
+            width: auto;
+            position: relative;
+        }
+
+        .on {
+            color: #4169e2;
+        }
+
+        .inner span.on i {
+            background-color: #4169e2;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 4rem;
+            height: .24rem;
+            margin: auto;
+            display: inline-block;
+        }
+
+        /* Tab */
+        
+        /* Loop show box */
+        .loop-show-box-wrapper {
+            align-items: center;
+            display: flex;
+            color: #333;
+            overflow: hidden;
+            border-radius: 0.32rem;
+            margin: 0 1rem;
+            position: relative;
+            background-color: #fff;
+            box-shadow: 0 0.16rem 0.5rem 0 rgba(0,0,0,.05);
+            align-items: center;
+            justify-content: center;
+            height: 2.8rem;
+            vertical-align: middle;
+        }
+    
+        .loop-show-box {
+            width: 100%;
+            height: 1.6rem;
+            line-height: 1.6rem;
+        }
+
+        .marquee-content {
+            margin: 0;
+            padding: 0 1rem;
+        }
+
+        .li-style {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            width: 100%;
+            height: 1.6rem;
+            padding: 0 0 0.6rem 0 ;
+        }
+
+        .leftText {
+            color: #f74c31;
+            padding: 0 0.12rem;
+            font-size: 0.9rem;
+            background-color: #ffefed;
+        }
+
+        .message {
+            padding: 0.24rem;
+            flex: 1;
+        }
+
+        .rightIcon {
+            justify-self: right;
+            color: #aaaaaa
+        }
+
+        /* Map Tab*/
+
+        .mapTab {
+            display: flex;
+            justify-content: center;
+            background-color: #e6edff;
+        }
+
+        .item {
+            flex: 1;
+            border-radius: 0.8rem 0 0 0 ;
+            color: #4169e2;
+            font-weight: 500;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            height: 3rem;
+        }
+
+        .on {
+            background-color: #fff;
+            border-radius: 0 0.8rem 0 0 ;
+        }
+
+
+
+        /* */
+
+        /* Bottom */
+        .bottomBtns {
+            position: fixed;
+            right: 0;
+            bottom: 1rem;
+            left: 0;
+            z-index: 90;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            line-height: 3.2rem;
+            font-size: 1.3rem;
+            padding: 0 1rem 1rem 1rem;
+        }
+
+        .baseBtn {
+            position: relative;
+            display: flex;
+            flex: 1 1;
+            align-items: center;
+            justify-content: center;
+            border: 0.16rem solid;
+            border-radius: 1.6rem;
+            background-color: #4169e2;
+            border-color: #4169e2;
+            margin-right: 1rem;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 0.16rem 0.5rem 0 rgba(65, 105, 226, .4);
+        }
+
+        .icon {
+            height: 1.5rem;
+            width: 1.5rem;
+            display: inline-block;
+            padding: 0 .4rem 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <div class="wrapper">
+            <div class="top">
+                <div class="pv">
+                    2,723,588,010 人次已浏览
+                </div>
+            </div>
+
+            <div class="tab">
+                <div class="inner">
+                    <span class="on">
+                        疫情地图
+                        <i class="selected"></i>
+                    </span>
+                    <span>
+                        辟谣与防护
+                        <i></i>
+                    </span>
+                    <span>
+                        实时播报
+                        <i></i>
+                    </span>
+                    <span>
+                        疾病知识
+                        <i></i>
+                    </span>
+                </div>
+            </div>
+            <div class="mapBox">
+                <div class="root">
+                    <div class="loop-show-box-wrapper">
+                        <div class="loop-show-box">
+                            <ul class="marquee-content">
+                                <li class="li-style">
+                                    <div class="leftText">武汉</div>
+                                    <div class="message">有了第一家「关门大吉」的方舱医院</div>
+                                    <div class="rightIcon">></div>
+                                </li>
+                                <li class="li-style">
+                                    <div class="leftText">美国</div>
+                                    <div class="message">华盛顿州出现首例新冠肺炎死亡</div>
+                                    <div class="rightIcon">></div>
+                                </li>
+                                <li class="li-style">
+                                    <div class="leftText">大数据</div>
+                                    <div class="message">钟南山领衔发表中国新冠病例特征论文</div>
+                                    <div class="rightIcon">></div>
+                                </li>
+                                <li class="li-style">
+                                    <div class="leftText">美国</div>
+                                    <div class="message">华盛顿州出现首例新冠肺炎死亡</div>
+                                    <div class="rightIcon">></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapTab">
+                    <div class="item on">国内疫情数据</div>
+                    <div class="item">国外疫情数据</div>
+                </div>
+                <div class="mapTop"></div>
+                <div class="collum"></div>
+            </div>
+            <div class="rumorTabWrap"></div>
+            <div class="recomendList"></div>
+            <div>
+                <div class="whiteSpace"></div>
+                <p class="mapTap"></p>
+                <div class="tab2"></div>
+                <p class="watchMore"></p>
+            </div>
+            <div class="wikiTabWrap"></div>
+            <div class="bottomLogo"></div>
+            <div class="bottomBtns">
+                <a href="https://mama.dxy.com/client/outbreak/landing-page?from=todh5" class="baseBtn">
+                    <img src="./dxy/subscribe.png" alt="" class="icon">
+                    <span class="text">
+                        订阅疫情动态
+                    </span>
+                </a>
+                <a href="" class="baseBtn">
+                    <img src="./dxy/share.png" alt="" class="icon">
+                    <span class="text">
+                        分享疫情地图
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
