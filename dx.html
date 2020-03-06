@@ -143,6 +143,10 @@
             background-color: #e6edff;
         }
 
+        .mapTop {
+            background-color: #fff;
+        }
+
         .item {
             flex: 1;
             border-radius: 0.8rem 0 0 0 ;
@@ -160,7 +164,72 @@
             border-radius: 0 0.8rem 0 0 ;
         }
 
-        /* */
+        .title {
+            color: #666666;
+            padding: 1rem 0 1rem 1rem ;
+            height: 1.2rem;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            vertical-align: middle;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dataDesc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f7f7f7;
+            padding: 0.5rem;
+            border-radius: 1rem 0 0 1rem;
+        }
+
+        .questionMark {
+            padding: 0 0.3rem 0 0;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        /* Big Number */
+
+        .bigNumberList {
+            display: flex;
+            flex-flow: wrap;
+            list-style-type: none;
+            margin: 0.5rem 1rem ;
+        }
+
+        .bigNumberItem {
+            margin-top: 0.5rem;
+            text-decoration: none;
+            width: 33.3%;
+        }
+
+        .numberTitle {
+            display: block;
+            font-weight: bold;
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+        }
+
+        .number {
+            display: block;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            text-align: center;
+        }
+
+        .numberDesc {
+            display: block;
+            text-align: center;
+            color: #333;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.2rem;
+        }
 
         /* Bottom */
         .bottomBtns {
@@ -200,8 +269,6 @@
         }
 
         .icon {
-            height: 1.5rem;
-            width: 1.5rem;
             display: inline-block;
             padding: 0 .4rem 0 0;
         }
@@ -274,13 +341,46 @@
                     <div class="statistics">
                         <div class="title">
                             <span>截至 2020-03-06 09：20 全国数据统计</span>
-                            <em>
-                                <img alt="question"
-                                    src="data:image/png;base64,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">
+                            <em class="dataDesc">
+                                <img class="questionMark" alt="question" src="data:image/png;base64,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">
                                 数据说明
                             </em>
                         </div>
-                        <div class="bigNumberPannel"></div>
+                        <div class="bigNumberPannel">
+                            <p></p>
+                            <ul class="bigNumberList">
+                                <li class="bigNumberItem">
+                                    <span class="numberTitle">较昨日无变化</span>
+                                    <span style="color: rgb(247, 76, 49);"  class="number">25153</span>
+                                    <span class="numberDesc">现存确诊</span>
+                                </li>
+                                <li class="bigNumberItem">
+                                    <span class="numberTitle">较昨日无变化</span>
+                                    <span class="number">522</span>
+                                    <span class="numberDesc">现存疑似</span>
+                                </li>
+                                <li class="bigNumberItem">
+                                    <span class="numberTitle">较昨日无变化</span>
+                                    <span class="number">5952</span>
+                                    <span class="numberDesc">现存重症</span>
+                                </li>
+                                <li class="bigNumberItem">
+                                    <span class="numberTitle">较昨日无变化</span>
+                                    <span class="number">80585</span>
+                                    <span class="numberDesc">累计确认</span>
+                                </li>
+                                <li class="bigNumberItem">
+                                    <span class="numberTitle">较昨日无变化</span>
+                                    <span class="number">3016</span>
+                                    <span class="numberDesc">累计死亡</span>
+                                </li>
+                                <li class="bigNumberItem">
+                                    <span class="numberTitle">较昨日无变化</span>
+                                    <span class="number">52416</span>
+                                    <span class="numberDesc">累计治愈</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="collum"></div>
