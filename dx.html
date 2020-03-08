@@ -15,6 +15,25 @@
             padding: 0;
             user-select: none;
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            font-size: 20px
+        }
+
+        @media screen and ( max-width: 1024px ) {
+            html {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and ( max-width: 640px ) {
+            html {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and ( max-width: 480px ) {
+            html {
+                font-size: 10px;
+            }
         }
 
         .wrapper {
@@ -62,6 +81,8 @@
             flex: 1 1;
             width: auto;
             position: relative;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
         .on {
@@ -133,6 +154,9 @@
         .message {
             padding: 0.24rem;
             flex: 1;
+            font-size: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
         .rightIcon {
@@ -188,6 +212,8 @@
             background: #f7f7f7;
             padding: 0.5rem;
             border-radius: 1rem 0 0 1rem;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
         .questionMark {
@@ -214,6 +240,7 @@
             padding: .4rem 1rem;
             border-radius: 1rem;
             color: #666;
+            font-size: 1rem;
         }
 
         .bigNumberList {
@@ -343,6 +370,7 @@
         .icon {
             display: inline-block;
             padding: 0 .4rem 0 0;
+            height: 1.6rem;
         }
     </style>
 </head>
