@@ -1,0 +1,367 @@
+#root,
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 20px
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+.wrapper {
+    min-height: 946px;
+    background-color: #f7f7f7;
+    border: .01rem solid transparent;
+    padding-bottom: 5rem;
+}
+
+.top {
+    background: url("https://img1.dxycdn.com/2020/0208/913/3395498790898861163-2.png") no-repeat;
+    width: 100%;
+    position: relative;
+    padding-top: 33.5%;
+    background-size: cover;
+    text-align: center;
+}
+
+.pv {
+    position: absolute;
+    right: 0;
+    top: .5rem;
+    height: 2rem;
+    width: auto;
+    padding: 0 0.66rem 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2rem;
+    background-color: rgba(19, 15, 133, .6);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+/* Tab */
+
+.inner {
+    display: flex;
+    line-height: 4rem;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+.inner span {
+    flex: 1 1;
+    width: auto;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.on {
+    color: #4169e2;
+}
+
+.inner span.on i {
+    background-color: #4169e2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 4rem;
+    height: .24rem;
+    margin: auto;
+    display: inline-block;
+}
+
+/* Tab */
+
+/* Loop show box */
+.mapRoot {
+    padding: 1rem;
+}
+
+.loop-show-box-wrapper {
+    align-items: center;
+    display: flex;
+    color: #333;
+    overflow: hidden;
+    border-radius: 0.32rem;
+    padding: 0 1rem;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0.16rem 0.5rem 0 rgba(0, 0, 0, .05);
+    align-items: center;
+    justify-content: center;
+    height: 2.8rem;
+    vertical-align: middle;
+}
+
+.loop-show-box {
+    width: 100%;
+    height: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.marquee-content {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.li-style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 1.6rem;
+    padding: 0 0 0.6rem 0;
+}
+
+.leftText {
+    color: #f74c31;
+    padding: 0 0.12rem;
+    font-size: 0.9rem;
+    background-color: #ffefed;
+}
+
+.message {
+    padding: 0.24rem;
+    flex: 1;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.rightIcon {
+    color: #aaaaaa
+}
+
+/* Map Tab*/
+
+.mapTab {
+    display: flex;
+    justify-content: center;
+    background-color: #e6edff;
+}
+
+.mapTop {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.item {
+    flex: 1;
+    border-radius: 0.8rem 0 0 0;
+    color: #4169e2;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    height: 3rem;
+}
+
+.on {
+    background-color: #fff;
+    border-radius: 0 0.8rem 0 0;
+}
+
+.title {
+    color: #666666;
+    padding: 1rem 0 1rem 1rem;
+    height: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dataDesc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 0.5rem;
+    border-radius: 1rem 0 0 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.questionMark {
+    padding: 0 0.3rem 0 0;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Big Number */
+
+.bigNumberPanel {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: .08rem solid #ebebeb;
+    border-radius: 0.32rem;
+    box-shadow: 0 0.32rem 0.96rem 0 rgba(0, 0, 0, .05);
+}
+
+.bigNumberTitle {
+    align-self: center;
+    background-color: #eeeeee;
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    color: #666;
+    font-size: 1rem;
+}
+
+.bigNumberList {
+    display: flex;
+    flex-flow: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bigNumberItem {
+    margin: 0.5rem 0;
+    text-decoration: none;
+    width: 33.3%;
+}
+
+.numberTitle {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #666;
+    text-align: center;
+}
+
+.number {
+    display: block;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.numberDesc {
+    display: block;
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+}
+
+/* Collom */
+.collum {
+    display: flex;
+    flex-flow: wrap;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.collDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 32.4%;
+    background-color: #f1f5ff;
+    margin: 0.2rem 0.2rem 0 0;
+    border-radius: 0.32rem;
+}
+
+.collumIcon {
+    display: inline-block;
+    height: 2rem;
+    padding: 1rem 0.5rem;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    height: 4rem;
+}
+
+.textTitle {
+    font-size: 1rem;
+    line-height: 1.3;
+    color: #333;
+    white-space: nowrap;
+    font-weight: 700;
+    margin: 0;
+}
+
+.textSubTitle {
+    font-size: 0.7rem;
+    margin: 0.3rem 0 0 0;
+    color: #666;
+}
+
+/* Bottom */
+.bottomBtns {
+    position: fixed;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+    z-index: 90;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    line-height: 3.2rem;
+    font-size: 1.3rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.baseBtn {
+    position: relative;
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    justify-content: center;
+    border: 0.16rem solid;
+    border-radius: 1.6rem;
+    background-color: #4169e2;
+    border-color: #4169e2;
+    margin-right: 1rem;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0.16rem 0.5rem 0 rgba(65, 105, 226, .4);
+}
+
+.subButton {
+    background-color: #fff;
+    color: #4169e2;
+}
+
+.icon {
+    display: inline-block;
+    padding: 0 .4rem 0 0;
+    height: 1.6rem;
+}
